@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cart</title>
+</head>
+
+<body>
+
+    <h1>MY CART</h1>
+
+    <div id="cart-items"></div>
+
+    <h2 id="total">Total: R0</h2>
+
+    <a href="Category.html">Continue Shopping</a>
+
+   <script>
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+function displayCart() {
+
+    let cartItems = document.getElementById("cart-items");
+    let totalElement = document.getElementById("total");
+
+    cartItems.innerHTML = "";
+
+    let total = 0;
+
+    if (cart.length === 0) {
+
+        cartItems.innerHTML = "<p>Your cart is empty.</p>";
+        totalElement.innerHTML = "Total: R0";
+        return;
+    }
+
+    cart.forEach(function(product, index) {
+
+        let itemTotal = product.price * product.quantity;
+
+        total = total + itemTotal;
+
+        cartItems.innerHTML += `
+        
+        <div class="cart-item">
+
+            <h3>${product.name}</h3>
+
+            <p>Price: R${product.price}</p>
+
+            <button onclick="decreaseQuantity(${index})">−</button>
+
+            <span> ${product.quantity} </span>
+
+            <button onclick="increaseQuantity(${index})">+</button>
+
+            <p>Subtotal: R${itemTotal}</p>
+
+            <button onclick="removeItem(${index})">
+                🗑️ Remove
+            </button>
+
+        </div>
+
+        <hr>
+
+        `;
+    });
+
+    totalElement.innerHTML = "Total: R" + total;
+}
+
+
+function increaseQuantity(index) {
+
+    cart[index].quantity++;
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    displayCart();
+}
+
+
+function decreaseQuantity(index) {
+
+    if (cart[index].quantity > 1) {
+
+        cart[index].quantity--;
+
+    } else {
+
+        cart.splice(index, 1);
+
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    displayCart();
+}
+
+
+function removeItem(index) {
+
+    cart.splice(index, 1);
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    displayCart();
+}
+
+
+displayCart();
+
+</script>
+
+</body>
+
+</html>
