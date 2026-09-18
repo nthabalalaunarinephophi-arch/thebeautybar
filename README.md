@@ -160,7 +160,3 @@ The website was tested using a tablet screen size. The layout and spacing were c
 <img width="1112" height="907" alt="Screenshot 2026-09-18 023724" src="https://github.com/user-attachments/assets/c4c77b13-be0c-4687-b9a5-26fb964798f8" />
 
 The website was tested using a mobile screen size. The navigation, product images, product cards and buttons were checked to make sure that they fitted correctly on the smaller screen.
-
-### Changes Made After Testing
-
-After testing the website, changes were made to improve the layout on smaller screens. The product images were kept small, the products were arranged vertically, and responsive CSS was used to make the website easier to use on different screen sizes.
