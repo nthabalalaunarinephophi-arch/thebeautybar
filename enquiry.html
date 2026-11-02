@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Enquiry | The Beauty Bar</title>
+    <meta name="description" content="Enquire about products and services at The Beauty Bar.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <h1>PRODUCT ENQUIRY</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Category.html">Category</a>
+            <a href="Cart.html">Cart</a>
+            <a href="Contact.html">Contact</a>
+            <a href="About.html">About</a>
+        </nav>
+    </header>
+
+    <main class="container narrow">
+        <h2>Ask Us a Question</h2>
+
+        <p>Complete this form to enquire about a product, its price or availability.</p>
+
+        <form id="enquiry-form" class="form-card">
+            <label for="enquiry-name">Full Name</label>
+            <input type="text" id="enquiry-name" name="name"
+                   minlength="2" maxlength="60" required>
+
+            <label for="enquiry-email">Email Address</label>
+            <input type="email" id="enquiry-email" name="email" required>
+
+            <label for="enquiry-type">Type of Enquiry</label>
+            <select id="enquiry-type" required>
+                <option value="">Choose an option</option>
+                <option>Product Information</option>
+                <option>Price Enquiry</option>
+                <option>Product Availability</option>
+                <option>Beauty Services</option>
+                <option>Other</option>
+            </select>
+
+            <label for="enquiry-product">Product or Service</label>
+            <input type="text" id="enquiry-product" maxlength="100" required>
+
+            <label for="enquiry-message">Your Enquiry</label>
+            <textarea id="enquiry-message" minlength="10"
+                      maxlength="1000" required></textarea>
+
+            <button type="submit">Submit Enquiry</button>
+
+            <p id="enquiry-feedback" class="form-feedback"
+               role="status" aria-live="polite"></p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Beauty Bar</p>
+    </footer>
+
+</body>
+</html>
