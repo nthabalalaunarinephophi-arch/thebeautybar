@@ -160,3 +160,51 @@ The website was tested using a tablet screen size. The layout and spacing were c
 <img width="1112" height="907" alt="Screenshot 2026-09-18 023724" src="https://github.com/user-attachments/assets/c4c77b13-be0c-4687-b9a5-26fb964798f8" />
 
 The website was tested using a mobile screen size. The navigation, product images, product cards and buttons were checked to make sure that they fitted correctly on the smaller screen.
+
+
+
+
+PART 3
+
+### Part 2 Feedback Changes
+-added a home display image
+-added more information on the home page
+-improved my navigation
+-added a payment page
+-renamed my home page 
+-added an enquiry page
+-added an footer
+
+### PART 3 UPDATE
+-ADDED A MAP
+<img width="1098" height="866" alt="Screenshot 2026-11-02 173039" src="https://github.com/user-attachments/assets/e960221a-984d-4a2a-be71-270bb84a3712" />
+
+
+
+
+
+-ADDED AN ENQUIRY PAGE
+<img width="1257" height="916" alt="Screenshot 2026-11-02 173443" src="https://github.com/user-attachments/assets/58b4fe40-ee1b-43cc-8743-c5411013a66b" />
+
+
+
+
+
+-ADDED AN SEARCH FUNCTIONALITY TO FILTER AND SORT CONTENT
+<img width="1658" height="572" alt="Screenshot 2026-11-02 173700" src="https://github.com/user-attachments/assets/3866682c-1a5a-4e73-b243-c7e3f791cb37" />
+
+
+
+-ADDED ANIMATIONS AND TRANSITIONS
+
+
+
+
+
+
+
+
+
+
+
+
