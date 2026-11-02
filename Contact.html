@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | The Beauty Bar</title>
+    <meta name="description" content="Contact The Beauty Bar with questions or feedback.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="script.js"></script>
+</body>
+</head>
+<body>
+
+    <header class="site-header">
+        <h1>CONTACT US</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="About.html">About</a>
+        </nav>
+    </header>
+
+    <main class="container narrow">
+        <section class="contact-details">
+            <h2>Get in Touch</h2>
+
+            <p>We would love to hear from you. Contact us if you have a question, feedback or need support.</p>
+
+            <p>015 627 5567</p>
+            <p>Email:thebeautybar@gmail.com</p>
+            <p>Address:58 Landros Street, Polokwane, 0700, South Africa</p>
+                  <div class="map-container">
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.9991276567093!2d29.449645679822186!3d-23.889649623334417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec6d848236fe709%3A0xfb12655fab36ce8f!2s58%20Landdros%20Mare%20St%2C%20Polokwane%20Ext%204%20(W)%2C%20Polokwane%2C%200700!5e0!3m2!1sen!2sza!4v1793614404779!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>"
+        loading="lazy"
+        title="The Beauty Bar location map"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+</div>
+  
+            <p>Hours: Monday-Friday, 09:00-17:00</p>
+            <p>Saturday:09:00-14:00</p>
+            <p>Sunday:Closed</p>
+        </section>
+
+        <h2>Send Us a Message</h2>
+
+        <form id="contact-form" class="form-card">
+            <label for="contact-name">Full Name</label>
+            <input type="text" id="contact-name" name="name"
+                   minlength="2" maxlength="60" required>
+
+            <label for="contact-email">Email Address</label>
+            <input type="email" id="contact-email" name="email" required>
+
+            <label for="contact-phone">Phone Number (Optional)</label>
+            <input type="tel" id="contact-phone"
+                   pattern="[0-9 +()\-]{7,20}"
+                   title="Enter a valid phone number">
+
+            <label for="contact-subject">Subject</label>
+            <select id="contact-subject" required>
+                <option value="">Choose a subject</option>
+                <option>General Question</option>
+                <option>Feedback</option>
+                <option>Order Support</option>
+                <option>Complaint</option>
+                <option>Other</option>
+            </select>
+
+            <label for="contact-message">Your Message</label>
+            <textarea id="contact-message" minlength="10"
+                      maxlength="1000" required></textarea>
+
+            <button type="submit">Send Message</button>
+
+            <p id="contact-feedback" class="form-feedback"
+               role="status" aria-live="polite"></p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Beauty Bar</p>
+    </footer>
+
+</body>
+</html>

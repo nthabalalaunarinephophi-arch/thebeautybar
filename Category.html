@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Categories | The Beauty Bar</title>
+    <meta name="description" content="Browse skincare, makeup, hair care and fragrance products at The Beauty Bar.">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1>THE BEAUTY BAR</h1>
+        <p>Enhance Your Beauty, Embrace Yourself</p>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <h2>ALL CATEGORIES</h2>
+
+        <a href="index.html" class="button-link">
+            Back to Home
+        </a>
+
+        <h2>Find Your Beauty Products</h2>
+
+        <div class="shop-controls">
+            <label for="product-search">Search products:</label>
+            <input
+                type="search"
+                id="product-search"
+                placeholder="Search for a product..."
+            >
+
+            <label for="sort-products">Sort by:</label>
+            <select id="sort-products">
+                <option value="featured">Featured</option>
+                <option value="low-high">Price: Low to High</option>
+                <option value="high-low">Price: High to Low</option>
+                <option value="name">Product Name</option>
+            </select>
+        </div>
+
+        <p id="product-feedback" role="status" aria-live="polite"></p>
+
+        <div id="product-list" class="product-list">
+
+            <div class="product-card">
+                <img src="resor/Face cream.jpeg" alt="Face Mask" width="100"> 
+                <div class="product-info">
+                    <h3>Face Mask</h3>
+                    <p>Price: R120</p>
+                    <button onclick="addToCart(2)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="resor/Foundation.jpeg" alt="Foundation" width="100">
+                <div class="product-info">
+                    <h3>Foundations</h3>
+                    <p>Price: R220</p>
+                    <button onclick="addToCart(3)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="resor/Lipgloss.jpeg" alt="Lip Gloss" width="100">
+                <div class="product-info">
+                    <h3>Lip Gloss</h3>
+                    <p>Price: R80</p>
+                    <button onclick="addToCart(4)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="resor/Hair Shampoo.jpeg" alt="Hair Shampoo" width="100">
+                <div class="product-info">
+                    <h3>Hair Shampoo</h3>
+                    <p>Price: R210</p>
+                    <button onclick="addToCart(5)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="resor/Hair Oil.jpeg" alt="Hair Oil" width="100">
+                <div class="product-info">
+                    <h3>Hair Oil</h3>
+                    <p>Price: R150</p>
+                    <button onclick="addToCart(6)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="resor/Perfume.jpeg" alt="Perfume" width="100">
+                <div class="product-info">
+                    <h3>Perfumes</h3>
+                    <p>Price: R210</p>
+                    <button onclick="addToCart(7)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="resor/cologne.jpeg" alt="Cologne" width="100">
+                <div class="product-info">
+                    <h3>Colognes</h3>
+                    <p>Price: R900</p>
+                    <button onclick="addToCart(8)">Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="button-row">
+            <a href="Cart.html" class="button-link">View My Cart</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Beauty Bar</p>
+    </footer>
+
+</body>
+</html>
