@@ -198,6 +198,13 @@ PART 3
 -ADDED ANIMATIONS AND TRANSITIONS
 
 
+DEPLOYED WEBSITE:
+
+https://astonishing-salmiakki-9cdfb5.netlify.app
+
+
+
+
 
 
 
